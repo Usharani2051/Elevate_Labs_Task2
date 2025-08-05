@@ -35,6 +35,13 @@ Regional Sales Distribution
 📍 Tools Used
  - Power BI Desktop
  - Excel / PDF Sales Data
+ - DAX Measures for KPIs:
+
+DAX
+Total Sales = SUM('Cleaned_Sales_Data'[Sales])
+Total Orders = DISTINCTCOUNT('Cleaned_Sales_Data'[OrderNumber])
+Average Order Value = DIVIDE([Total Sales],[Total Orders],0)
+
 
 🧠 Key Insights
  - Sales consistently peak in Q4.
