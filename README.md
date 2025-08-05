@@ -1,9 +1,11 @@
 # Elevate_Labs_Task2
 
 Sales Dashboard - Power BI
+
 This repository contains a Power BI Sales Dashboard designed to analyze and visualize key sales metrics for business insights and decision-making.
 
 🧾 About the Project
+
 The Sales Dashboard provides a detailed overview of product sales, customer performance, order trends, and regional distribution. It is built using Power BI and leverages interactive visuals for dynamic data exploration.
 
 📌 Key Features & Visuals
