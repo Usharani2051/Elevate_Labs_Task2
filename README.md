@@ -8,42 +8,40 @@ This repository contains a Power BI Sales Dashboard designed to analyze and visu
 
 The Sales Dashboard provides a detailed overview of product sales, customer performance, order trends, and regional distribution. It is built using Power BI and leverages interactive visuals for dynamic data exploration.
 
-📌 Key Features & Visuals
-KPIs Summary Cards
- - Total Sales: $10M
- - Total Quantity Sold: 99.1K
- - Average Sales per Order: $32.7K
- - Total Orders: 307
 
-Trend Analysis Chart
- - Displays sales performance over time from 2003 to 2005.
+📌 Features & KPIs
 
-Product Performance
- - Highlights top-selling product categories.
- - Classic Cars emerged as the leading product type.
+- Total Sales: $10M
+- Total Quantity Sold: 99.1K
+- Average Sales per Order: $32.7K
+- Total Orders: 307
+- Regional performance via map visualization
+- Top product lines and top customers
+- Deal size analysis (Small, Medium, Large) 
 
-Top 10 Customers
- - Ranked by total sales, quantity, and number of orders.
- - Euro Shopping Channel is the top customer.
+---
 
-Sales Order Analysis
- - Minimum Order Value: $482.13
- - Maximum Order Value: $14.08K
- - Average Order Value: $33K
+ 📈 Data Visualization
 
-Regional Sales Distribution
-- Country-wise contribution with USA contributing nearly 60% of total sales.
+| Chart Title                            | Description |
+|----------------------------------------|-------------|
+| **Sales Trend Over Time**           | Line chart showing monthly/quarterly sales trends with seasonal insights. |
+| **Top-Performing Sales Regions**    | Filled map highlighting geographical revenue distribution. |
+| **Sales by Product Line**           | Bar chart showing sales by product categories like Classic Cars, Vintage Cars, etc. |
+| **Top Revenue-Contributing Customers** | Sorted bar chart showing top buyers and their contribution to sales. |
+| **Sales Breakdown by Deal Size**    | Donut chart showing revenue split across Small, Medium, and Large deal sizes. |
 
 📍 Tools Used
  - Power BI Desktop
  - Excel / PDF Sales Data
+ - Dataset: 'Cleaned_Sales_Data.csv'
  - DAX Measures for KPIs:
 
 DAX
 
-Total Sales = SUM('Cleaned_Sales_Data'[Sales])
+Total Sales = SUM('Sales_Data'[Sales])
 
-Total Orders = DISTINCTCOUNT('Cleaned_Sales_Data'[OrderNumber])
+Total Orders = DISTINCTCOUNT('Sales_Data'[OrderNumber])
 
 Average Order Value = DIVIDE([Total Sales],[Total Orders],0)
 
