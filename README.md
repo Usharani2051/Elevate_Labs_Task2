@@ -52,3 +52,5 @@ Average Order Value = DIVIDE([Total Sales],[Total Orders],0)
  - A small set of high-value customers generate the majority of revenue.
  - Product demand is dominated by Classic Cars and Collectibles.
 
+   Project Link: https://app.powerbi.com/links/u5bqnDvwZH?ctid=46805c18-2ee4-4b75-970e-c9ce28de3cbf&pbi_source=linkShare
+
